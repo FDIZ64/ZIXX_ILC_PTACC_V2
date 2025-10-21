@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZIXX_ILC_PTACC_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="ZIXX_ILC_PTACC" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="RBUKRS"/>
+                    <PropertyRef Name="RACCT"/>
+                    <PropertyRef Name="GJAHR"/>
+                    <PropertyRef Name="BELNR"/>
+                    <PropertyRef Name="BUZEI"/>
+                </Key>
+                <Property Name="RBUKRS" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Company Code" sap:updatable="false"/>
+                <Property Name="RACCT" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Account Number" sap:updatable="false"/>
+                <Property Name="GJAHR" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Fiscal Year" sap:updatable="false"/>
+                <Property Name="BELNR" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Document Number" sap:updatable="false"/>
+                <Property Name="BUZEI" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Item" sap:updatable="false"/>
+                <Property Name="EBELN" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Purchasing Doc."/>
+                <Property Name="EBELP" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="Item"/>
+                <Property Name="MATNR" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Material"/>
+                <Property Name="STATUS" Type="Edm.String" MaxLength="1" sap:unicode="false" sap:label="Status"/>
+                <Property Name="ISSUE_DES" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Issue Description"/>
+                <Property Name="ACT_PLA_NEX_STE" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Action Plan/Next Steps"/>
+                <Property Name="EXP_RES" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Expected Resolution"/>
+                <Property Name="ERZDT" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date created"/>
+                <Property Name="ERZZT" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="Time created"/>
+                <Property Name="ERNAM" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Created By"/>
+                <Property Name="AEDAT" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Changed On"/>
+                <Property Name="AEZEIT" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="Changed At"/>
+                <Property Name="ERCNAM" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Changed By"/>
+            </EntityType>
+            <EntityType Name="MATNR" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Matnr"/>
+                    <PropertyRef Name="Spras"/>
+                </Key>
+                <Property Name="Maktg" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Material" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Spras" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Language" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="T001" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="BUKRS"/>
+                </Key>
+                <Property Name="BUKRS" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Company Code" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="BUTXT" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Company Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ORT01" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="City" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="LAND1" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Country/Reg." sap:creatable="false" sap:updatable="false"/>
+                <Property Name="WAERS" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Currency" sap:creatable="false" sap:updatable="false" sap:semantics="currency-code"/>
+                <Property Name="SPRAS" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Language" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KTOPL" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Chart of Accts" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="XTEMPLT" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Template" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZIXX_ILC_PTACC_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ZIXX_ILC_PTACCSet" EntityType="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="MATNRSet" EntityType="ZIXX_ILC_PTACC_SRV.MATNR" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="T001Set" EntityType="ZIXX_ILC_PTACC_SRV.T001" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <atom:link rel="self" href="http://besr4d/sap/opu/odata/sap/ZIXX_ILC_PTACC_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://besr4d/sap/opu/odata/sap/ZIXX_ILC_PTACC_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
