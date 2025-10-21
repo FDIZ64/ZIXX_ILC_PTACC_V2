@@ -21,7 +21,7 @@
     "entityRelatedConfig": [
       {
         "type": "Main Entity",
-        "value": "ZIXX_ILC_PTACCSet"
+        "value": "ZIXX_ILC_PTACC_V"
       }
     ],
     "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"

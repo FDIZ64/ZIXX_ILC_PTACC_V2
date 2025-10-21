@@ -29,82 +29,82 @@
             </Annotation>
         </Annotations>
 <!-- SELECTION FIELDS -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType">
             <Annotation Term="UI.SelectionFields">
                 <Collection>
-                    <PropertyPath>RBUKRS</PropertyPath>
-                    <PropertyPath>RACCT</PropertyPath>
-                    <PropertyPath>GJAHR</PropertyPath>
-                    <PropertyPath>BELNR</PropertyPath>
-                    <PropertyPath>BUZEI</PropertyPath>
-                    <PropertyPath>EBELN</PropertyPath>
-                    <PropertyPath>EBELP</PropertyPath>
-                    <PropertyPath>MATNR</PropertyPath>
+                    <PropertyPath>rbukrs</PropertyPath>
+                    <PropertyPath>racct</PropertyPath>
+                    <PropertyPath>gjahr</PropertyPath>
+                    <PropertyPath>belnr</PropertyPath>
+                    <PropertyPath>belnr</PropertyPath>
+                    <PropertyPath>ebeln</PropertyPath>
+                    <PropertyPath>ebelp</PropertyPath>
+                    <PropertyPath>matnr</PropertyPath>
                 </Collection>
             </Annotation>
         </Annotations>
 <!-- LINE ITEMS -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType">
             <Annotation Term="UI.LineItem">
                 <Collection>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="RBUKRS"/>
+                        <PropertyValue Property="Value" Path="rbukrs"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="RACCT"/>
+                        <PropertyValue Property="Value" Path="racct"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="GJAHR"/>
+                        <PropertyValue Property="Value" Path="gjahr"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="BELNR"/>
+                        <PropertyValue Property="Value" Path="belnr"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="BUZEI"/>
+                        <PropertyValue Property="Value" Path="buzei"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="EBELN"/>
+                        <PropertyValue Property="Value" Path="ebeln"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="EBELP"/>
+                        <PropertyValue Property="Value" Path="ebelp"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="MATNR"/>
+                        <PropertyValue Property="Value" Path="matnr"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="STATUS"/>
+                        <PropertyValue Property="Value" Path="status"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ISSUE_DES"/>
+                        <PropertyValue Property="Value" Path="issue_des"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ACT_PLA_NEX_STE"/>
+                        <PropertyValue Property="Value" Path="act_pla_nex_ste"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="EXP_RES"/>
+                        <PropertyValue Property="Value" Path="exp_res"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ERZDT"/>
+                        <PropertyValue Property="Value" Path="erzdt"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ERZZT"/>
+                        <PropertyValue Property="Value" Path="erzzt"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ERNAM"/>
+                        <PropertyValue Property="Value" Path="ernam/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="AEDAT"/>
+                        <PropertyValue Property="Value" Path="aedat"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="AEZEIT"/>
+                        <PropertyValue Property="Value" Path="aezeit"/>
                     </Record>
                     <Record Type="UI.DataField">
-                        <PropertyValue Property="Value" Path="ERCNAM"/>
+                        <PropertyValue Property="Value" Path="ercnam"/>
                     </Record>
                 </Collection>
             </Annotation>
         </Annotations>
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType">
             <Annotation Term="Common.DraftRoot">
                 <Record Type="Common.DraftRootType"/>
             </Annotation>
@@ -121,40 +121,40 @@
                         <PropertyValue Property="Data">
                            <Collection>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="RBUKRS" />
+                                <PropertyValue Property="Value" Path="rbukrs" />
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="RACCT"/>
+                                <PropertyValue Property="Value" Path="racct"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="GJAHR"/>
+                                <PropertyValue Property="Value" Path="gjahr"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="BELNR"/>
+                                <PropertyValue Property="Value" Path="belnr"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="BUZEI"/>
+                                <PropertyValue Property="Value" Path="buzei"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="EBELN"/>
+                                <PropertyValue Property="Value" Path="ebeln"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="EBELP"/>
+                                <PropertyValue Property="Value" Path="ebelp"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="MATNR"/>
+                                <PropertyValue Property="Value" Path="matnr"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="STATUS"/>
+                                <PropertyValue Property="Value" Path="icono_estado"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ISSUE_DES"/>
+                                <PropertyValue Property="Value" Path="issue_des"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ACT_PLA_NEX_STE"/>
+                                <PropertyValue Property="Value" Path="act_pla_nex_ste"/>
                             </Record>
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="EXP_RES"/>
+                                <PropertyValue Property="Value" Path="exp_res"/>
                             </Record>
                            </Collection>
                         </PropertyValue>
@@ -162,7 +162,7 @@
                 </Annotation>
         </Annotations>
 <!-- VALUE HELP MATNR -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/MATNR">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType/matnr">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="MATNRSet"/>
@@ -170,7 +170,7 @@
                     <PropertyValue Property="Parameters">
                         <Collection>
                             <Record Type="Common.ValueListParameterInOut">
-                            <PropertyValue Property="LocalDataProperty" PropertyPath="MATNR"/>
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="matnr"/>
                             <PropertyValue Property="ValueListProperty" String="Matnr"/>
                             </Record>
                             <Record Type="Common.ValueListParameterDisplayOnly">
@@ -182,7 +182,7 @@
             </Annotation>
         </Annotations>
 <!-- VALUE HELP RBUKRS -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/RBUKRS">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType/rbukrs">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="T001Set"/>
@@ -190,7 +190,7 @@
                     <PropertyValue Property="Parameters">
                         <Collection>
                             <Record Type="Common.ValueListParameterInOut">
-                            <PropertyValue Property="LocalDataProperty" PropertyPath="RBUKRS"/>
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="rbukrs"/>
                             <PropertyValue Property="ValueListProperty" String="BUKRS"/>
                             </Record>
                             <Record Type="Common.ValueListParameterDisplayOnly">
@@ -202,7 +202,7 @@
             </Annotation>
         </Annotations>
 <!-- VALUE HELP RACCT -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/RACCT">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType/racct">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="SKA1Set"/>
@@ -210,7 +210,7 @@
                     <PropertyValue Property="Parameters">
                         <Collection>
                             <Record Type="Common.ValueListParameterInOut">
-                            <PropertyValue Property="LocalDataProperty" PropertyPath="RACCT"/>
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="racct"/>
                             <PropertyValue Property="ValueListProperty" String="SAKNR"/>
                             </Record>
                             <Record Type="Common.ValueListParameterDisplayOnly">
@@ -226,7 +226,7 @@
         </Annotations>
 
 <!-- VALUE HELP EBELN -->
-        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/EBELN">
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC_VType/ebeln">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="EBELNSet"/>
@@ -234,11 +234,11 @@
                     <PropertyValue Property="Parameters">
                         <Collection>
                             <Record Type="Common.ValueListParameterInOut">
-                            <PropertyValue Property="LocalDataProperty" PropertyPath="EBELN"/>
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="ebeln"/>
                             <PropertyValue Property="ValueListProperty" String="EBELN"/>
                             </Record>
                             <Record Type="Common.ValueListParameterInOut">
-                            <PropertyValue Property="LocalDataProperty" PropertyPath="EBELP"/>
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="ebelp"/>
                             <PropertyValue Property="ValueListProperty" String="EBELP"/>
                             </Record>
                             <Record Type="Common.ValueListParameterDisplayOnly">
