@@ -225,8 +225,55 @@
             </Annotation>
         </Annotations>
 
+<!-- VALUE HELP EBELN -->
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/EBELN">
+            <Annotation Term="Common.ValueList">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="EBELNSet"/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="EBELN"/>
+                            <PropertyValue Property="ValueListProperty" String="EBELN"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="EBELP"/>
+                            <PropertyValue Property="ValueListProperty" String="EBELP"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="BSART"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="BSTYP"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="EKGRP"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="EKORG"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="EXLIN"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="ISEOPBLOCKED"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="MATNR"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="STATU"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="WERKS"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
 
-
+        </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
