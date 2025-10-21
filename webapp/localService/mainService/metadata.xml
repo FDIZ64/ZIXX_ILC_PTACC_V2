@@ -51,10 +51,24 @@
                 <Property Name="KTOPL" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Chart of Accts" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="XTEMPLT" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Template" sap:creatable="false" sap:updatable="false"/>
             </EntityType>
+            <EntityType Name="SKA1" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SPRAS"/>
+                    <PropertyRef Name="KTOPL"/>
+                    <PropertyRef Name="SAKNR"/>
+                </Key>
+                <Property Name="SPRAS" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Language" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KTOPL" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Chart of Accts" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SAKNR" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="G/L Account" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TXT50" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Long Text" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="MCOD1" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Long Text" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SAKAN" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="G/L Account" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
             <EntityContainer Name="ZIXX_ILC_PTACC_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="ZIXX_ILC_PTACCSet" EntityType="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="MATNRSet" EntityType="ZIXX_ILC_PTACC_SRV.MATNR" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="T001Set" EntityType="ZIXX_ILC_PTACC_SRV.T001" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SKA1Set" EntityType="ZIXX_ILC_PTACC_SRV.SKA1" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
             </EntityContainer>
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
             <atom:link rel="self" href="http://besr4d/sap/opu/odata/sap/ZIXX_ILC_PTACC_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>

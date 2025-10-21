@@ -156,24 +156,6 @@
                             <Record Type="UI.DataField">
                                 <PropertyValue Property="Value" Path="EXP_RES"/>
                             </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ERZDT"/>
-                            </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ERZZT"/>
-                            </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ERNAM"/>
-                            </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="AEDAT"/>
-                            </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="AEZEIT"/>
-                            </Record>
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ERCNAM"/>
-                            </Record>
                            </Collection>
                         </PropertyValue>
                     </Record>
@@ -205,10 +187,46 @@
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="T001Set"/>
                     <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="RBUKRS"/>
+                            <PropertyValue Property="ValueListProperty" String="BUKRS"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="BUTXT"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
                 </Record>
             </Annotation>
-
         </Annotations>
+<!-- VALUE HELP RACCT -->
+        <Annotations Target="ZIXX_ILC_PTACC_SRV.ZIXX_ILC_PTACC/RACCT">
+            <Annotation Term="Common.ValueList">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="SKA1Set"/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="RACCT"/>
+                            <PropertyValue Property="ValueListProperty" String="SAKNR"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="TXT50"/>
+                            </Record>
+                            <Record Type="Common.ValueListParameterDisplayOnly">
+                                <PropertyValue Property="ValueListProperty" String="KTOPL"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
+        </Annotations>
+
+
+
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
